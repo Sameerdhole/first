@@ -22,8 +22,8 @@ dish: Dish;
     private leaderservice: LeaderService) { }
 
   ngOnInit() {
-    this.dish = this.dishservice.getFeaturedDish();
-    this.promotion = this.promotionservice.getFeaturedPromotion();
-    this.leader = this.leaderservice.getFeaturedLeader();
+    this.dishservice.getFeaturedDish().subscribe(dishes => this.dish = dishes);
+    this.promotionservice.getFeaturedPromotion().subscribe(promotions => this.promotion = promotions);
+    this.leaderservice.getFeaturedLeader().subscribe(leaders => this.leader = leaders);
   }
 }

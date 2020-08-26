@@ -20,6 +20,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { AppComponent } from './app.component';
 
 
+
 import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
